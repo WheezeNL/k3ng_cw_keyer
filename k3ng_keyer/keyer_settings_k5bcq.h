@@ -40,8 +40,8 @@
 #define winkey_xoff_threshold 20         // the number of chars in the buffer when we begin sending XOFFs
 #define winkey_xon_threshold 10          // the number of chars in the buffer below which we deactivate XOFF
 #define default_memory_repeat_time 3000  // time in milliseconds
-#define LCD_COLUMNS 16          //edit for 1602 or 1604 LCD
-#define LCD_ROWS 2           //edit for 1602 or 1604 LCD
+#define LCD_COLUMNS 20          //edit for 1602 or 1604 LCD
+#define LCD_ROWS 4           //edit for 1602 or 1604 LCD
 #define hell_pixel_microseconds 4025
 #define program_memory_limit_consec_spaces 1
 #define serial_leading_zeros 1            // set to 1 to activate leading zeros in serial numbers (i.e. #1 = 001)
@@ -68,8 +68,8 @@
 
 #ifdef FEATURE_COMMAND_BUTTONS
   #define analog_buttons_number_of_buttons 8  // includes the command button (command button + 3 memory buttons = 4)
-  #define analog_buttons_r1 10
-  #define analog_buttons_r2 1
+  #define analog_buttons_r1 10 // 10K Ohm = 10
+  #define analog_buttons_r2 1 // 1K Ohm = 1
 #endif
 
 
